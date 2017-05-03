@@ -5,8 +5,12 @@ Complete, compliant and well tested module for implementing an OAuth2 Server/Pro
 ## Installation
 
 ```
-npm install node-oauth2-server
+npm install git://github.com/Adveez/node-oauth2-server.git#master
 ```
+
+## Adveez Note
+
+Because version 2 of this module is already in production in our side and because we cannot upgrade easily that module to version 3 (still in beta while I am writing this note) we decided to fork that project to fit our needs. So we created a new version modifying few lines of code to remove response sent by that middleware.
 
 ## Quick Start
 
