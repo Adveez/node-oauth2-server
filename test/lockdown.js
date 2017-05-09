@@ -29,13 +29,13 @@ var bootstrap = function (oauthConfig) {
 
   app.use(bodyParser());
 
-  app.all('/oauth/token', app.oauth.grant);
+  app.get('/oauth/token', app.oauth.grant);
 
-  app.all('/private', function (req, res, next) {
+  app.get('/private', function (req, res, next) {
     res.send('Hello');
   });
 
-  app.all('/public', app.oauth.bypass, function (req, res, next) {
+  app.get('/public', app.oauth.bypass, function (req, res, next) {
     res.send('Hello');
   });
 
